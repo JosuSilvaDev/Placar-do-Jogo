@@ -20,31 +20,29 @@ print ("TIME 2" , media_ex_jogador)
 
 if medio_jogador_1 > media_ex_jogador :
     time_vantagem = 1
-    print ("VANTAGEM TIME-1 :"  ), 
+    print ("VANTAGEM CORINTHIAS :"  ), 
 elif media_ex_jogador > medio_jogador_1:
     time_visitante_vatagem = 1 
-    print ("VANTAGEM TIME-2 :" ) ,
+    print ("VANTAGEM PALMEIRAS :" ) ,
 else :
-    print("impate")   
+    print("IMPATE")   
     
     
-print( "-" * 90)
-print("")
-print (f"PRIMEIRO JOGO FOI: {time_casa} 1 x {time_visitante} 2")
+print( "-" * 90 )
+
+print (f"PRIMEIRO JOGO FOI: \t{time_casa} 1 x {time_visitante} 2")
 print()
 placar_anterior =1,2 
 
 
 print (f"QUANTO ACHA QUE IRA SER O PROXIMO JOGO:")
-placar_time1 = int(input("TIME-1 PLACAR:"))
-placar_time2 = int(input("TIME-2 PLACAR:"))
+placar_time1 = int(input("TIME DA CASA PLACAR:"))
+placar_time2 = int(input("TIME VISITANTE PLACAR:"))
 
 placar = placar_time1,placar_time2
 print (placar)
-print (placar[0])
-print (placar[1])
 
-print (f"NO AGRAGADO ESTA {placar[0] + placar_anterior[0]} a {placar[1] + placar_anterior[1]}")
+print (f"NO AGRAGADO ESTA \t{placar[0] + placar_anterior[0]} X {placar[1] + placar_anterior[1]}")
 
 
 placar_agregado = placar[0] + placar_anterior[0] , placar[1] + placar_anterior[1]
@@ -52,9 +50,9 @@ placar_agregado = placar[0] + placar_anterior[0] , placar[1] + placar_anterior[1
 
 if placar_agregado[0] > placar_agregado[1]    :
     if medio_jogador_1 > media_ex_jogador :
-        print (f"Time {time_casa} COM {placar_agregado} 100% NA FINAL") ,
+        print (f"MEDIA : {medio_jogador_1} SER MAIOR. {time_casa} CLASIFICA") ,
     else:
-        print (f"Time {time_casa} TEM 80% DE CHANCE")      
+        print (f"{media_ex_jogador} SER MAIOR. E TER VENCIADO DE {placar_agregado}POREM COM O PLACAR DE {placar_agregado[0]} X {placar_agregado[1]} O TIME {time_casa} CLASIFICA COM 70% DE CHANCE") ,     
 
 elif placar_agregado[0] < placar_agregado[1]    :
     print (f"Time {time_visitante} clasificou"),
@@ -63,7 +61,7 @@ else:
     if medio_jogador_1 > media_ex_jogador :
         print (f"MEDIA : {medio_jogador_1} SER MAIOR. {time_casa} CLASIFICA") ,
     else:
-        print (f"MEDIA : {media_ex_jogador} SER MAIOR. {time_visitante} CLASIFICA") ,
+        print (f"MEDIA : {media_ex_jogador} SER MAIOR. {time_visitante} CLASIFICA") , 
 
 
 
