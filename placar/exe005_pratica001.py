@@ -1,3 +1,5 @@
+#POSSO USAR O EXEMPLO DO PLACAR PARA CALCULAR A MEDIA DE JOGADORES DE DOIS TIMES E VER QUAL TIME TEM A MELHOR MEDIA E QUEM VAI CLASSIFICAR PARA A PROXIMA FASE DO CAMPEONATO, POSSO PEGAR DADOS REAIS OU ISTATISTICAS DO TIME PARA ACREGAR NO RESULTADO, O IF PRICIPAL FALTA ORGANIZAR MELHOR.
+
 time_casa = "CORINTHIANS"
 time_visitante = "PALMEIRAS"
 time_avante = "Flamengo"
@@ -56,6 +58,7 @@ if placar_agregado[0] > placar_agregado[1]    :
 
 elif placar_agregado[0] < placar_agregado[1]    :
     print (f"Time {time_visitante} clasificou"),
+
 
 else:
     if medio_jogador_1 > media_ex_jogador :
